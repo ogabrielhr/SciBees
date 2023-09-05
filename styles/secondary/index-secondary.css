@@ -1,0 +1,19 @@
+@import '../components/header.css';
+@import './components/service-banner.css';
+@import './components/explanatory.css';
+@import './components/warning.css';
+@import './components/assistance.css';
+
+:root {
+  --primary: #FFCD00;
+  --secondary: #3F4444;
+}
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #fff;
+}

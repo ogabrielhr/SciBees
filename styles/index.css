@@ -1,0 +1,24 @@
+@import './components/header.css';
+@import './components/banner.css';
+@import './components/services.css';
+@import './components/how-it-works.css';
+@import './components/numbers.css';
+@import './components/about-section.css';
+@import './components/feedbacks.css';
+@import './components/posts.css';
+@import './components/footer.css';
+@import './components/searchers.css';
+
+:root {
+  --primary: #FFCD00;
+  --secondary: #3F4444;
+}
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: var(--secondary);
+}

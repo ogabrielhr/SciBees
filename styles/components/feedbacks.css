@@ -1,0 +1,63 @@
+.feedbacks {
+  margin-top: 140px;
+  /* padding: 0 20%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.feedbacks .content {
+  width: 80%;
+}
+
+.feedbacks .title {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.feedbacks .items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+}
+
+.feedbacks .items .item {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 470px;
+  background-image: url("../../assets/images/feedbacks/baloon.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  padding: 30px;
+}
+
+.feedbacks .items .item .title {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 18.4px;
+  margin-top: 20px;
+  /* 76.667% */
+}
+
+.feedbacks .items .item .description {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18.4px;
+  /* 153.333% */
+}

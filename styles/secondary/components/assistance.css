@@ -1,0 +1,48 @@
+.assistance.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 88px 0;
+  padding-bottom: 160px;
+  color: #3F4444;
+  font-family: Montserrat;
+}
+
+.assistance.content {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  gap: 22px;
+}
+
+.assistance.title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 56px;
+}
+
+.assistance .item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(255, 230, 127, 0.50);
+  gap: 18px;
+  padding-bottom: 11px;
+  margin-bottom: 25px;
+}
+
+.assistance .item .subtitle {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.assistance .item .description {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

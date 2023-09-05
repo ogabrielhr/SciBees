@@ -1,0 +1,29 @@
+.header {
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
+}
+
+.header .logo {
+  height: 40px;
+}
+
+.header .menu {
+  display: flex;
+  flex-direction: row;
+  gap: 38px;
+  align-items: center;
+}
+
+.header .menu .item {
+  color: #3F4444;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
