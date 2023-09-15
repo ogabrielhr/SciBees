@@ -48,20 +48,20 @@
 }
 
 .icon.person {
-  width:135px;
-  height:135px;
+  width: 135px;
+  height: 135px;
   margin-top: 30px;
 }
 
 .icon.list {
-  width:116px;
-  height:135px;
+  width: 116px;
+  height: 135px;
   margin-top: 30px;
 }
 
 .icon.call {
-  width:140px;
-  height:134px;
+  width: 140px;
+  height: 134px;
   margin-top: 30px;
 }
 
@@ -69,3 +69,144 @@
   width: 112px;
   height: 112px;
 }
+
+/* xs */
+@media (max-width: 600px) {
+  .how-works {
+    margin-top: 140px;
+    /* padding: 0 20%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .how-works .title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: 50px;
+    text-align: center;
+  }  
+
+  .how-works .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .how-works .items .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    gap: 15px;
+  }
+
+  .icon.number {
+    width: 47px;
+    height: 47px;
+  }
+
+  .icon.list {
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+  }
+  
+  .icon.person {
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+  }
+  
+  .icon.call {
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+  }
+}
+
+/* sm */
+@media (min-width: 400px) and (max-width: 960px) {
+  .how-works {
+    margin-top: 140px;
+    /* padding: 0 20%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .how-works .title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: 50px;
+    text-align: center;
+  }  
+
+  .how-works .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .how-works .items .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    gap: 15px;
+  }
+
+  .icon.number {
+    width: 47px;
+    height: 47px;
+  }
+
+  .icon.list {
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+  }
+  
+  .icon.person {
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+  }
+  
+  .icon.call {
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+  }
+}
+
+/* md */
+@media (min-width: 960px) and (max-width: 1280px) {}
+
+/* lg */
+@media (min-width: 1280px) and (max-width: 1920px) {}
+
+/* xl */
+@media (min-width: 1920px) and (max-width: 2560px) {}

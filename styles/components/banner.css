@@ -1,5 +1,6 @@
 .banner {
   background-color: var(--primary);
+  /* background: -webkit-gradient(linear, left top, left bottom, from(var(--primary)), to(var(--secondary))); */
   height: 122vh;
   position: relative;
 }
@@ -66,3 +67,73 @@
 .golden-line img {
   height: 100%;
 }
+
+/* xs */
+@media (max-width: 600px) {
+  .banner {
+    background-color: var(--primary);
+    height: 80vh;
+    position: relative;
+  }
+
+  .banner .smiling {
+    height: 60%;
+    width: fit-content;
+    position: absolute;
+    right: -85px;
+    bottom: 50px;
+    /* z-index: 9; */
+  }
+
+  .banner .hoxagons {
+    height: 80%;
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    display: none;
+  }
+
+  .text-card .text {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    /* 119.5% */
+    letter-spacing: 4.7px;
+  
+    position: absolute;
+    top: 25%;
+    right: 0px;
+    /* width: 100%; */
+    left: 10px;
+  }
+
+  .golden-line img {
+    height: 100%;
+    display: none;
+  }
+
+  .text-card {
+    background-image: url("../../assets/images/banner/text-card-bg.png");
+    width: 75%;
+    height: 60%;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    padding: 10px;
+  }
+}
+
+/* sm */
+@media (min-width: 400px) and (max-width: 960px) {}
+
+/* md */
+@media (min-width: 960px) and (max-width: 1280px) {}
+
+/* lg */
+@media (min-width: 1280px) and (max-width: 1920px) {}
+
+/* xl */
+@media (min-width: 1920px) and (max-width: 2560px) {}

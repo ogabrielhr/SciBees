@@ -52,14 +52,19 @@
   font-size: initial;
   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
   /* background: #FFE67F; */
-  background-color: #fff;
+  background-color: transparent;
+  background-image: url("../../assets/images/numbers/counter-bg-white.png");
   margin-bottom: -60px;
+  margin-right: -1vw;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .numlist div:nth-child(odd) {
@@ -93,5 +98,107 @@
 }
 
 .nums.color {
-  background-color: #FFCD00;
+  background-color: transparent;
+  background-image: url("../../assets/images/numbers/counter-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+
+
+/* xs */
+@media (max-width: 600px) {
+  .numbers {
+    /* background: var(--primary); */
+    margin-top: 80px;
+  }
+
+  .nums.title {
+    color: #3F4444;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .nums.description {
+    color: #3F4444;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .numlist div {
+    /* width: var(--s); */
+    width: 16.6%;
+    /* margin: var(--m); */
+    /* height: calc(var(--s)*1.1547); */
+    height: 13vh;
+    text-align: center;
+    font-size: initial;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    /* background: #FFE67F; */
+    background-color: transparent;
+    margin-bottom: -60px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* sm */
+@media (min-width: 400px) and (max-width: 960px) {
+  .numbers {
+    /* background: var(--primary); */
+    margin-top: 80px;
+  }
+
+  .nums.title {
+    color: #3F4444;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .nums.description {
+    color: #3F4444;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .numlist div {
+    /* width: var(--s); */
+    width: 16.6%;
+    /* margin: var(--m); */
+    /* height: calc(var(--s)*1.1547); */
+    height: 13vh;
+    text-align: center;
+    font-size: initial;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    /* background: #FFE67F; */
+    background-color: transparent;
+    margin-bottom: -60px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* md */
+@media (min-width: 960px) and (max-width: 1280px) {}
+
+/* lg */
+@media (min-width: 1280px) and (max-width: 1920px) {}
+
+/* xl */
+@media (min-width: 1920px) and (max-width: 2560px) {}
