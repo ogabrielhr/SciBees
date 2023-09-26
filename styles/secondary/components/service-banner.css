@@ -15,7 +15,8 @@
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 23px; /* 63.889% */
+  line-height: 23px;
+  /* 63.889% */
 }
 
 .servicebanner.description {
@@ -31,7 +32,8 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 23px; /* 143.75% */
+  line-height: 23px;
+  /* 143.75% */
 }
 
 .servicebanner.content {
@@ -40,10 +42,38 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 40px;
 }
 
 .servicebanner.photo-wrapper {
   padding-top: 60px;
   padding-bottom: 80px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicebanner.details {
+  width: 50%;
+}
+
+.servicebanner.photo {
+  width: 25vw;
+}
+
+.servicebanner.action {
+  border-radius: 8px;
+  background: #FFCD00;
+  color: #fff;
+  padding: 10px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
 }

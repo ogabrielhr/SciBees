@@ -1,0 +1,223 @@
+.plans {
+  padding-top: 85px;
+  background: #FFCD00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plans .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.plans .title {
+  color: #3F4444;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.plans .options-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.plans .option-btn {
+  padding: 20px 50px;
+  border-radius: 16px;
+  background: #C7C9C7;
+  cursor: pointer;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  flex-grow: 1;
+}
+
+.option-btn.active {
+  padding: 20px 50px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  color: #FFCD00;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  flex-grow: 1;
+}
+
+.plans .description {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+
+.plans-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+}
+
+.plan-option {
+  background-color: #fff;
+  padding: 21px 40px;
+  border-radius: 16px;
+  width: 40%;
+  text-align: center;
+}
+
+.plan-title {
+  color: #3F4444;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #3F4444;
+}
+
+.plan-option .content {
+  width: 100%;
+  background-image: url(../../../assets/images/services/mentoring/plan-bg.png);
+  padding-top: 35px;
+  padding-bottom: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.plan-option .small-quantity {
+  color: #3F4444;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 15px;
+}
+
+.plan-option .quantity {
+  color: #3F4444;
+  text-shadow: 0px 0px 40px #FFCD00;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.plan-option .quantity-description {
+  color: #3F4444;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.plan-option .simple-description {
+  color: #3F4444;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.plan-option .characteristics {
+  margin-bottom: 20px;
+}
+
+.plan-option .white-divider {
+  border-bottom: 1px solid #fff;
+  width: 90%;
+  margin-top: 24px;
+  margin-bottom: 37px;
+}
+
+.plan-option .select-message {
+  color: #3F4444;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.plan-option label {
+  color: #FFCD00;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.plan-option .radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.plan-option .submit {
+  border: none;
+  border-radius: 16px;
+  background: #3F4444;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  padding: 10px;
+  width: 70%;
+  cursor: pointer;
+}
+
+.plans .explicative {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.plans .spacer {
+  margin-bottom: 200px;
+}

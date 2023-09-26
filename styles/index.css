@@ -8,6 +8,7 @@
 @import './components/posts.css';
 @import './components/footer.css';
 @import './components/searchers.css';
+@import './components/simple-list-service.css';
 
 :root {
   --primary: #FFCD00;
@@ -27,6 +28,20 @@ body {
 
 .show-in-small {
   display: none !important;
+}
+
+.wts-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.wts-btn button {
+  cursor: pointer;
+}
+
+.wts-btn button:hover {
+  zoom: 1.01;
 }
 
 /* xs */

@@ -1,0 +1,87 @@
+.simple-list-service {
+  margin-top: 65px;
+  /* padding: 0 20%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.simple-list-service .content {
+  width: 70%;
+}
+
+.simple-list-service .title {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.service-card-list {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+}
+
+.card-image {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-image img{
+  width: 100%;
+}
+
+.card-content {
+  padding: 30px;
+  background: #fff;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  height: 200px;
+  position: relative;
+}
+
+.card-title {
+  color: #3F4444;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.card-description {
+  color: #3F4444;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-action {
+  color: #FFCD00;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  bottom: 30px;
+  position: absolute;
+}

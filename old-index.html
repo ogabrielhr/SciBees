@@ -19,10 +19,6 @@
     function goToMentoria() {
       window.location.href = '/mentoria';
     }
-
-    function goFormatacao() {
-      window.location.href = '/formatacao';
-    }
   </script>
 </head>
 
@@ -50,33 +46,42 @@
     </div>
     <div class="smiling"><img src="./assets/images/banner/smiling-girl.png" /></div>
   </section>
-  <section class="simple-list-service">
-    <div class="content">
-      <div class="title"><span>Nossos Serviços</span></div>
-      <div class="service-card-list">
-        <!-- Mentoria -->
-        <div class="service-card">
-          <div class="card-image">
-            <img src="./assets/images/simple-services/top-bg.png" />
-          </div>
-          <div class="card-content">
-            <span class="card-title">Mentoria</span>
-            <span class="card-description">Texto falando sobre o serviço de mentoria.</span>
-            <div class="card-action" onclick="goToMentoria()">Saiba mais</div>
-          </div>
+  <section class="services">
+    <div class="title" id="servicesTitle">
+      <span>Nossos Serviços</span>
+    </div>
+  </section>
+  <section>
+    <div class="services-list">
+      <div class="list">
+        <div></div>
+        <div class="hex-selectable">
+          <p class="hex-menu-item">Assessoria para<br />publicação</p>
         </div>
-
-        <!-- Formatação -->
-        <div class="service-card">
-          <div class="card-image">
-            <img src="./assets/images/simple-services/top-bg.png" />
-          </div>
-          <div class="card-content">
-            <span class="card-title">Formatação</span>
-            <span class="card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
-            <div class="card-action" onclick="goFormatacao()">Saiba mais</d>
-          </div>
+        <div class="hex-selectable">
+          <p class="hex-menu-item">Análise de<br /> dados</p>
         </div>
+        <div class="hex-selectable">
+          <p class="hex-menu-item">Readequação<br /> de artigo</p>
+        </div>
+        <div></div>
+        <div></div>
+        <div
+          class="hex-selectable"
+          onclick="goToMentoria()"
+        >
+          <p class="hex-menu-item">Mentoria</p>
+        </div>
+        <div class="hex-selectable">
+          <p class="hex-menu-item">Revisão Crítica</p>
+        </div>
+        <div class="hex-selectable">
+          <p class="hex-menu-item">Tradução</p>
+        </div>
+        <div class="hex-selectable">
+          <p class="hex-menu-item">Normatização</p>
+        </div>
+        <div></div>
       </div>
     </div>
   </section>
@@ -299,11 +304,6 @@
       <div class="ico-wrapper"></div>
     </div>
   </section>
-  <div class="wts-btn">
-    <button type="button" style="border: 0; background: transparent">
-      <img src="./assets/images/initial/whats.png" width="50" height="50" alt="WhatsApp Button" />
-     </button>
-  </div>
   <div class="footer-last">
     © 2022 Scibees. All Rights Reserved.
   </div>
