@@ -14,13 +14,19 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+
+  <script src="../scripts/index.js"></script>
 </head>
 
 <body>
   <section class="header">
-    <img class="logo" src="../assets/images/logo/logo.png" />
+    <img
+      class="logo"
+      src="../assets/images/logo/logo.png"
+      onclick="goHome()"
+    />
     <div class="header-menu hide-in-small">
-      <div class="item">Nosso Serviço</div>
+      <!-- <div class="item">Nosso Serviço</div> -->
       <div class="item">Como Funciona</div>
       <div class="item">Sobre</div>
       <div class="item">Oportunidade</div>
@@ -89,7 +95,7 @@
       </div>
     </div>
   </section>
-  <section class="assistance section">
+  <!-- <section class="assistance section">
     <div class="assistance title">COMO IREMOS TE AJUDAR</div>
     <div class="assistance content">
       <div class="item">
@@ -159,7 +165,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <section class="warning section">
     <div class="warning content">
       <div class="warning text">
@@ -194,11 +200,19 @@
       </div>
     </div>
   </section>
+  <section class="hand-shake">
+    <img src="../assets/images/services/mentoring/hand-shake.png" width="78" height="78" />
+    <div class="hand-shake description">
+      Você sente que precisa de um acompanhamento em cada etapa da sua pesquisa? Então nosso plano de acompanhamento
+      Mentoria Avançada em Pesquisa é feito para você!
+      <br />Confira nossos planos:
+    </div>
+  </section>
   <section class="plans">
     <div class="content">
       <div class="title">Planos de acompanhamento</div>
       <div class="options-list">
-        <button class="option-btn active">PACOTE TCC</button>
+        <!-- <button class="option-btn active">PACOTE TCC</button> -->
         <button class="option-btn">PACOTE DISSETAÇÃO</button>
         <button class="option-btn">TESE DE DOUTORADO</button>
       </div>
@@ -214,9 +228,11 @@
           <div class="content">
             <span class="quantity">1</span>
             <span class="quantity-description">Sessão de mentoria<br />mensal</span>
-            <div class="characteristics"><span class="small-quantity">5</span><span class="simple-description">Laudas¹ para revisão
+            <div class="characteristics"><span class="small-quantity">5</span><span class="simple-description">Laudas¹
+                para revisão
                 critica/mês</span></div>
-            <div class="characteristics"><span>[check]</span><span class="simple-description">Template da tese (ABNT)</span></div>
+            <div class="characteristics"><span>[check]</span><span class="simple-description">Template da tese
+                (ABNT)</span></div>
             <div class="white-divider"></div>
             <span class="select-message">Selecione o plano</span>
             <div class="radio-group">
@@ -237,9 +253,11 @@
           <div class="content">
             <span class="quantity">2</span>
             <span class="quantity-description">Sessão de mentoria<br />mensal</span>
-            <div class="characteristics"><span class="small-quantity">5</span><span class="simple-description">Laudas¹ para revisão
+            <div class="characteristics"><span class="small-quantity">5</span><span class="simple-description">Laudas¹
+                para revisão
                 critica/mês</span></div>
-            <div class="characteristics"><span>[check]</span><span class="simple-description">Template da tese (ABNT)</span></div>
+            <div class="characteristics"><span>[check]</span><span class="simple-description">Template da tese
+                (ABNT)</span></div>
             <div class="white-divider"></div>
             <span class="select-message">Selecione o plano</span>
             <div class="radio-group">
@@ -257,8 +275,31 @@
         </div>
       </div>
       <div class="explicative">¹ Cada lauda equivale a 2.000 caracteres de texto.</div>
+      <div class="footer-description">
+        <div>Conte com nossa empresa que tem a USP em seu DNA!</div>
+        <img src="../assets/images/about/dna-usp.png" width="120" height="120" />
+      </div>
     </div>
   </section>
+  <section class="footer">
+    <div class="col">
+      <img src="./assets/images/logo/logo.png" class="footer-logo" />
+      <span class="cnpj">CNPJ: 43.649.476/0001-60</span>
+    </div>
+    <div class="col">
+      <div class="contact">melmelito@scibees.com.br</div>
+      <div class="contact">(45)  9 9902-5842</div>
+    </div>
+    <div class="col">
+      <div class="ico-wrapper"></div>
+      <div class="ico-wrapper"></div>
+      <div class="ico-wrapper"></div>
+      <div class="ico-wrapper"></div>
+    </div>
+  </section>
+  <div class="footer-last">
+    © 2022 Scibees. All Rights Reserved.
+  </div>
 </body>
 
 </html>

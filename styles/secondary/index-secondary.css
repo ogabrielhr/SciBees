@@ -4,6 +4,8 @@
 @import './components/warning.css';
 @import './components/assistance.css';
 @import './components/plans.css';
+@import './components/hand-shake.css';
+@import './components/dark-footer.css';
 
 :root {
   --primary: #FFCD00;

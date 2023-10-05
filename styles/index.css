@@ -9,6 +9,7 @@
 @import './components/footer.css';
 @import './components/searchers.css';
 @import './components/simple-list-service.css';
+@import './components/details.css';
 
 :root {
   --primary: #FFCD00;
@@ -53,6 +54,10 @@ body {
   .hide-in-small {
     display: none !important;
   }
+}
+
+.hide {
+  display: none;
 }
 
 /* sm */

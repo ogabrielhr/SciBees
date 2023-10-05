@@ -24,13 +24,15 @@
       window.location.href = '/formatacao';
     }
   </script>
+
+  <script src="./scripts/index.js"></script>
 </head>
 
 <body>
   <section class="header">
     <img class="logo" src="./assets/images/logo/logo.png" />
     <div class="header-menu hide-in-small">
-      <div class="item">Nosso Serviço</div>
+      <!-- <div class="item">Nosso Serviço</div> -->
       <div class="item">Como Funciona</div>
       <div class="item">Sobre</div>
       <div class="item">Oportunidade</div>
@@ -38,11 +40,17 @@
   </section>
   <section class="banner">
     <div class="hoxagons"><img src="./assets/images/banner/invisible-hexagon.png" /></div>
+    <img src="./assets/images/banner/bee-1.png" id="bee1" class="bee" />
+    <img src="./assets/images/banner/bee-2.png" id="bee2" class="bee hide" />
+    <img src="./assets/images/banner/bee-3.png" id="bee3" class="bee hide" />
     <div class="text-card">
       <div class="text">
         <span class="bold">Desenvolva</span> sua<br />
         <span class="bold">pesquisa científica</span><br />
-        com mais <br class="show-in-small"/><span class="bold primary">qualidade</span>
+        com mais <br class="show-in-small" />
+        <span class="bold primary banner-words">qualidade</span>
+        <span class="bold primary banner-words hide">facilidade</span>
+        <span class="bold primary banner-words hide">segurança</span>
       </div>
       <div class="golden-line">
         <img src="./assets/images/banner/golden-line.png" />
@@ -73,12 +81,16 @@
           </div>
           <div class="card-content">
             <span class="card-title">Formatação</span>
-            <span class="card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
+            <span class="card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </span>
             <div class="card-action" onclick="goFormatacao()">Saiba mais</d>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+  </section>
+  <section class="details">
+    Não espere entrar no modo desespero para pedir ajuda!
   </section>
   <section class="how-works">
     <div class="content">
@@ -146,17 +158,15 @@
             <div>
               <span>Uma empresa</span>
               <div>
-                <img
-                  src="assets/images/about/dna-usp.png"
-                  class="usp-logo"
-                />
+                <img src="assets/images/about/dna-usp.png" class="usp-logo" />
               </div>
             </div>
             <div>
               <span>Incubado por</span>
               <div>
                 <img src="assets/images/about/fundetec.png" class="fundetec-logo" />
-                <img src="assets/images/about/PTI-2022_Preferencial_Vertical_Monocromatica-Branca-1 1.png" class="pti-logo" />
+                <img src="assets/images/about/PTI-2022_Preferencial_Vertical_Monocromatica-Branca-1 1.png"
+                  class="pti-logo" />
               </div>
             </div>
             <div>
@@ -302,7 +312,7 @@
   <div class="wts-btn">
     <button type="button" style="border: 0; background: transparent">
       <img src="./assets/images/initial/whats.png" width="50" height="50" alt="WhatsApp Button" />
-     </button>
+    </button>
   </div>
   <div class="footer-last">
     © 2022 Scibees. All Rights Reserved.

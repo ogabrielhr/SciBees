@@ -14,13 +14,16 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+
+  <script src="../scripts/index.js"></script>
+  <script src="../scripts/format-plans.js"></script>
 </head>
 
 <body>
   <section class="header">
-    <img class="logo" src="../assets/images/logo/logo.png" />
+    <img class="logo" src="../assets/images/logo/logo.png" onclick="goHome()" />
     <div class="header-menu hide-in-small">
-      <div class="item">Nosso Serviço</div>
+      <!-- <div class="item">Nosso Serviço</div> -->
       <div class="item">Como Funciona</div>
       <div class="item">Sobre</div>
       <div class="item">Oportunidade</div>
@@ -76,7 +79,7 @@
       </div>
     </div>
   </section>
-  <section class="assistance section">
+  <!-- <section class="assistance section">
     <div class="assistance title">COMO IREMOS TE AJUDAR</div>
     <div class="assistance content">
       <div class="item">
@@ -146,15 +149,14 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <section class="warning section">
     <div class="warning content">
       <div class="big-description">
         Não perca mais tempo com normas complicadas e foque no mais importante, sua pesquisa! O resto nós fazemos,
         obtenha agora mesmo nossa ajuda!
       </div>
-      <div class="warning explicit-text">Conte com nossa empresa que tem a
-        USP em seu dna!</div>
+      <!-- <div class="warning explicit-text">Conte com nossa empresa que tem a USP em seu dna!</div> -->
 
       <div class="action-wrapper">
         <button type="button" class="warning-action">Quero contratar</button>
@@ -165,44 +167,55 @@
     <div class="content">
       <div class="title">Escolha um:</div>
       <div class="options-list">
-        <button class="option-btn">Pré-Projeto</button>
-        <button class="option-btn">TCC</button>
-        <button class="option-btn">Dissertação</button>
-        <button class="option-btn active">Artigo</button>
-        <button class="option-btn">Tese</button>
-        <button class="option-btn">Formatação de Tabelas</button>
-        <button class="option-btn">Criação de Tabelas</button>
+        <button class="option-btn" id="pre-btn" onclick="onChangePlan('pre')">Pré-Projeto</button>
+        <button class="option-btn" id="tcc-btn" onclick="onChangePlan('tcc')">TCC</button>
+        <button class="option-btn" id="diss-btn" onclick="onChangePlan('diss')">Dissertação</button>
+        <button class="option-btn" id="tese-btn" onclick="onChangePlan('tese')">Tese</button>
+        <button class="option-btn active" id="article-btn" onclick="onChangePlan('article')">Artigo</button>
+        <!-- <button class="option-btn">Formatação de Tabelas</button> -->
+        <!-- <button class="option-btn">Criação de Tabelas</button> -->
       </div>
       <div class="plans-list">
         <div class="plan-option">
           <div class="plan-title">Pacote Premium</div>
           <div class="content">
-            <span class="quantity">2</span>
-            <span class="quantity-description">Sessão de mentoria<br />mensal</span>
-            <div class="characteristics"><span class="small-quantity">5</span><span class="simple-description">Laudas¹
-                para revisão
-                critica/mês</span></div>
-            <div class="characteristics"><span>[check]</span><span class="simple-description">Template da tese
-                (ABNT)</span></div>
+            <div class="plan-price">
+              <div class="price-title">Investimento</div>
+              <div class="price" id="price">R$150,00</div>
+            </div>
             <div class="white-divider"></div>
-            <span class="select-message">Selecione o plano</span>
-            <div class="radio-group">
-              <div>
-                <input type="radio" id="six" name="standard" value="6">
-                <label for="six">6x de R$ 335,00</label>
-              </div>
-              <div>
-                <input type="radio" id="twelve" name="standard" value="12">
-                <label for="twelve">12x de R$ 315,00</label>
-              </div>
+            <div class="price-title">Limites</div>
+            <div class="limits-list">
+              <div><span class="number" id="pages">20</span> páginas</div>
+              <div><span class="number" id="refs">15</span> referências</div>
             </div>
           </div>
           <button type="button" class="submit">Contratar</button>
         </div>
       </div>
+      <div class="small-explicative">*Páginas e referências excedentes serão cobrados a parte.</div>
       <div class="spacer"></div>
     </div>
   </section>
+  <section class="footer">
+    <div class="col">
+      <img src="../assets/images/logo/logo.png" class="footer-logo" />
+      <span class="cnpj">CNPJ: 43.649.476/0001-60</span>
+    </div>
+    <div class="col">
+      <div class="contact">melmelito@scibees.com.br</div>
+      <div class="contact">(45)  9 9902-5842</div>
+    </div>
+    <div class="col">
+      <div class="ico-wrapper"></div>
+      <div class="ico-wrapper"></div>
+      <div class="ico-wrapper"></div>
+      <div class="ico-wrapper"></div>
+    </div>
+  </section>
+  <div class="footer-last">
+    © 2022 Scibees. All Rights Reserved.
+  </div>
 </body>
 
 </html>

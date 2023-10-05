@@ -126,6 +126,14 @@
   }
 }
 
+.bee {
+  position: absolute;
+  left: 0;
+  bottom: 30%;
+  z-index: 9;
+  width: 40%;
+}
+
 /* sm */
 @media (min-width: 400px) and (max-width: 960px) {}
 
