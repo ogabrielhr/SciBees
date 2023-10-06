@@ -68,20 +68,28 @@
   height: 100%;
 }
 
+.bee {
+  position: absolute;
+  left: 0;
+  bottom: 30%;
+  z-index: 9;
+  width: 40%;
+}
+
 /* xs */
 @media (max-width: 600px) {
   .banner {
     background-color: var(--primary);
-    height: 80vh;
+    height: 60vh;
     position: relative;
   }
 
   .banner .smiling {
-    height: 60%;
+    height: 70%;
     width: fit-content;
     position: absolute;
-    right: -85px;
-    bottom: 50px;
+    right: -80px;
+    bottom: 0;
     /* z-index: 9; */
   }
 
@@ -124,18 +132,81 @@
     position: absolute;
     padding: 10px;
   }
-}
 
-.bee {
-  position: absolute;
-  left: 0;
-  bottom: 30%;
-  z-index: 9;
-  width: 40%;
+  .bee {
+    position: absolute;
+    left: 0;
+    bottom: 40%;
+    z-index: 9;
+    width: 40%;
+  }
 }
 
 /* sm */
-@media (min-width: 400px) and (max-width: 960px) {}
+@media (min-width: 400px) and (max-width: 960px) {
+  .banner {
+    background-color: var(--primary);
+    height: 60vh;
+    position: relative;
+  }
+
+  .banner .smiling {
+    height: 70%;
+    width: fit-content;
+    position: absolute;
+    right: -80px;
+    bottom: 0;
+    /* z-index: 9; */
+  }
+
+  .banner .hoxagons {
+    height: 80%;
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    display: none;
+  }
+
+  .text-card .text {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    /* 119.5% */
+    letter-spacing: 4.7px;
+  
+    position: absolute;
+    top: 25%;
+    right: 0px;
+    /* width: 100%; */
+    left: 10px;
+  }
+
+  .golden-line img {
+    height: 100%;
+    display: none;
+  }
+
+  .text-card {
+    background-image: url("../../assets/images/banner/text-card-bg.png");
+    width: 75%;
+    height: 60%;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    padding: 10px;
+  }
+
+  .bee {
+    position: absolute;
+    left: 0;
+    bottom: 40%;
+    z-index: 9;
+    width: 40%;
+  }
+}
 
 /* md */
 @media (min-width: 960px) and (max-width: 1280px) {}

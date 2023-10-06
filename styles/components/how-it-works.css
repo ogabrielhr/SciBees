@@ -1,9 +1,13 @@
 .how-works {
-  margin-top: 140px;
+  padding-top: 140px;
   /* padding: 0 20%; */
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-image: url("../../../assets/images/details/triangle-top-bg.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 25%;
 }
 
 .how-works .content {
@@ -73,7 +77,7 @@
 /* xs */
 @media (max-width: 600px) {
   .how-works {
-    margin-top: 140px;
+    padding-top: 50px;
     /* padding: 0 20%; */
     display: flex;
     flex-direction: row;
@@ -83,7 +87,7 @@
   .how-works .title {
     color: #FFF;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 800;
     margin-bottom: 50px;
@@ -139,7 +143,7 @@
 /* sm */
 @media (min-width: 400px) and (max-width: 960px) {
   .how-works {
-    margin-top: 140px;
+    padding-top: 140px;
     /* padding: 0 20%; */
     display: flex;
     flex-direction: row;

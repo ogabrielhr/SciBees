@@ -1,5 +1,5 @@
 function goHome() {
-  window.open('/');
+  location.href = '/';
 }
 
 let bannerWordIndex = 0;

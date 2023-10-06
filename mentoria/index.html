@@ -16,6 +16,7 @@
     rel="stylesheet">
 
   <script src="../scripts/index.js"></script>
+  <script src="../scripts/mentoring-plans.js"></script>
 </head>
 
 <body>
@@ -183,12 +184,20 @@
         USP em seu dna!</div>
 
       <div class="price-box">
-        <div class="line">
+        <div class="line hide-in-small">
           <span class="text-strong">Sessão</span>
           <span class="text-time">60</span>
           <span class="text-time-description">minutos</span>
           <div class="divider"></div>
           <span class="text-price">R$150,00</span>
+        </div>
+        <div class="show-in-small">
+          <div class="sm-line">
+            <span class="text-strong">Sessão</span>
+            <span class="text-time">60</span>
+            <span class="text-time-description">minutos</span>
+          </div>
+          <div class="text-price">R$150,00</div>
         </div>
         <div class="price-box-informative">
           Contratando <span class="price-box-informative u">3 sessões ou mais</span> ganhe <span
@@ -211,10 +220,18 @@
   <section class="plans">
     <div class="content">
       <div class="title">Planos de acompanhamento</div>
-      <div class="options-list">
+      <div class="options-list-mentoring">
         <!-- <button class="option-btn active">PACOTE TCC</button> -->
-        <button class="option-btn">PACOTE DISSETAÇÃO</button>
-        <button class="option-btn">TESE DE DOUTORADO</button>
+        <button
+          class="option-btn active"
+          id="dissertation-btn"
+          onclick="onChangePlan('dissertation')"
+        >PACOTE DISSETAÇÃO</button>
+        <button
+          class="option-btn"
+          id="thesis-btn"
+          onclick="onChangePlan('thesis')"
+        >TESE DE DOUTORADO</button>
       </div>
       <div class="description">
         PLANOS DE ACOMPANHAMENTO TCC
@@ -226,23 +243,23 @@
         <div class="plan-option">
           <div class="plan-title">Pacote Standard</div>
           <div class="content">
-            <span class="quantity">1</span>
+            <span class="quantity" id="standard-sessions">1</span>
             <span class="quantity-description">Sessão de mentoria<br />mensal</span>
-            <div class="characteristics"><span class="small-quantity">5</span><span class="simple-description">Laudas¹
+            <div class="characteristics"><span class="small-quantity" id="standard-lauds">+5</span><span class="simple-description">Laudas¹
                 para revisão
                 critica/mês</span></div>
-            <div class="characteristics"><span>[check]</span><span class="simple-description">Template da tese
+            <div class="characteristics"><span class="small-quantity">+</span><span class="simple-description">Template da tese
                 (ABNT)</span></div>
             <div class="white-divider"></div>
             <span class="select-message">Selecione o plano</span>
             <div class="radio-group">
               <div>
                 <input type="radio" id="six" name="standard" value="6">
-                <label for="six">6x de R$ 200,00</label>
+                <label for="six">6x de <span id="standard-semi-price">R$ 200,00</span></label>
               </div>
               <div>
                 <input type="radio" id="twelve" name="standard" value="12">
-                <label for="twelve">12x de R$ 190,00</label>
+                <label for="twelve">12x de <span id="standard-annual-price">R$ 190,00</span></label>
               </div>
             </div>
           </div>
@@ -251,23 +268,23 @@
         <div class="plan-option">
           <div class="plan-title">Pacote Premium</div>
           <div class="content">
-            <span class="quantity">2</span>
+            <span class="quantity" id="premium-sessions">2</span>
             <span class="quantity-description">Sessão de mentoria<br />mensal</span>
-            <div class="characteristics"><span class="small-quantity">5</span><span class="simple-description">Laudas¹
+            <div class="characteristics"><span class="small-quantity" id="premium-lauds">5</span><span class="simple-description">Laudas¹
                 para revisão
                 critica/mês</span></div>
-            <div class="characteristics"><span>[check]</span><span class="simple-description">Template da tese
+            <div class="characteristics"><span class="small-quantity">+</span><span class="simple-description">Template da tese
                 (ABNT)</span></div>
             <div class="white-divider"></div>
             <span class="select-message">Selecione o plano</span>
             <div class="radio-group">
               <div>
                 <input type="radio" id="six" name="standard" value="6">
-                <label for="six">6x de R$ 335,00</label>
+                <label for="six">6x de <span id="premium-semi-price">R$ 335,00</span></label>
               </div>
               <div>
                 <input type="radio" id="twelve" name="standard" value="12">
-                <label for="twelve">12x de R$ 315,00</label>
+                <label for="twelve">12x de <span id="premium-annual-price">R$ 315,00</span></label>
               </div>
             </div>
           </div>
@@ -283,7 +300,7 @@
   </section>
   <section class="footer">
     <div class="col">
-      <img src="./assets/images/logo/logo.png" class="footer-logo" />
+      <img src="../assets/images/logo/white-logo.png" class="footer-logo" />
       <span class="cnpj">CNPJ: 43.649.476/0001-60</span>
     </div>
     <div class="col">
