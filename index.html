@@ -181,7 +181,13 @@
           </div>
         </div>
         <div class="item">
-          <div class="youtube-card">youtube card</div>
+          <!-- <div class="youtube-card">youtube card</div> -->
+          <iframe
+            class="youtube-card"
+            src="https://www.youtube.com/embed/j8VfcP8L9TU?si=pv9P02-yv4DKUo1q"
+            frameborder="0"
+            title="Scibee Youtube Video"
+            allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -285,13 +291,25 @@
       <div class="title"><span>Ultimas postagens</span></div>
       <div class="items">
         <div class="item">
-          <img class="post small" src="./assets/images/post/image 2.svg" />
+          <img
+            class="post small"
+            src="./assets/images/post/image 2.svg"
+            onclick="instaClick()"
+          />
         </div>
         <div class="item centered">
-          <img class="post big" src="./assets/images/post/image 2.svg" />
+          <img
+            class="post big"
+            src="./assets/images/post/image 2.svg"
+            onclick="instaClick()"
+          />
         </div>
         <div class="item">
-          <img class="post small" src="./assets/images/post/image 2.svg" />
+          <img
+            class="post small"
+            src="./assets/images/post/image 2.svg"
+            onclick="instaClick()"
+          />
         </div>
       </div>
     </div>
@@ -305,18 +323,67 @@
       <div class="contact">melmelito@scibees.com.br</div>
       <div class="contact">(45)  9 9902-5842</div>
     </div>
+    <!-- <div class="col social-footer">
+      <img src="./assets/images/footer/socials.png" usemap="#map1Map" style="height: 100%;" />
+      
+      <map name="map1Map">
+        <area
+          shape="rect"
+          coords="10,10,55,55"
+          href="https://www.instagram.com/scibees.solucoes/"
+          target="_blank"
+        >
+        <area
+          shape="rect"
+          coords="60,10,110,55"
+          href="https://www.linkedin.com/company/scibees/"
+          target="_blank"
+        >
+        <area
+          shape="rect"
+          coords="40,60,80,100"
+          href="https://www.youtube.com/@scibees"
+          target="_blank"
+        >
+        <area
+          shape="rect"
+          coords="95,60,135,100"
+        >
+      </map>
+    </div> -->
     <div class="col">
-      <div class="ico-wrapper"></div>
-      <div class="ico-wrapper"></div>
-      <div class="ico-wrapper"></div>
-      <div class="ico-wrapper"></div>
+      <div class="social-hive">
+        <div class="social-row top-social">
+          <div class="hive-item"><img
+            class="social-icon"
+            src="./assets/images/footer/instagram-ico.png"
+            onclick="instaClick()"
+          /></div>
+          <div class="hive-item"><img
+            class="social-icon"
+            src="./assets/images/footer/linkedin-ico.png"
+            onclick="linkedinClick()"
+          /></div>
+        </div>
+        <div class="social-row bottom-social">
+          <div class="hive-item"><img
+            class="social-icon"
+            src="./assets/images/footer/youtube-ico.png"
+            onclick="youtubeClick()"
+          /></div>
+          <div class="hive-item"><img
+            class="social-icon"
+            src="./assets/images/footer/discord-ico.png"
+          /></div>
+        </div>
+      </div>
     </div>
   </section>
-  <div class="wts-btn">
+  <!-- <div class="wts-btn">
     <button type="button" style="border: 0; background: transparent">
       <img src="./assets/images/initial/whats.png" width="50" height="50" alt="WhatsApp Button" />
     </button>
-  </div>
+  </div> -->
   <div class="footer-last">
     © 2022 Scibees. All Rights Reserved.
   </div>

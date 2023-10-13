@@ -2,6 +2,18 @@ function goHome() {
   location.href = '/';
 }
 
+function instaClick() {
+  window.open("https://www.instagram.com/scibees.solucoes/", "_blank");
+}
+
+function youtubeClick() {
+  window.open("https://www.youtube.com/@scibees", "_blank");
+}
+
+function linkedinClick() {
+  window.open("https://www.linkedin.com/company/scibees/", "_blank");
+}
+
 let bannerWordIndex = 0;
 let bannerBeeImgIndex = 0;
 
