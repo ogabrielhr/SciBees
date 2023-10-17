@@ -23,6 +23,11 @@
     function goFormatacao() {
       window.location.href = '/formatacao';
     }
+
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
   </script>
 
   <script src="./scripts/index.js"></script>
@@ -33,9 +38,9 @@
     <img class="logo" src="./assets/images/logo/logo.png" />
     <div class="header-menu hide-in-small">
       <!-- <div class="item">Nosso Serviço</div> -->
-      <div class="item">Como Funciona</div>
-      <div class="item">Sobre</div>
-      <div class="item">Oportunidade</div>
+      <div class="item scroll-button" onclick="scrollToSection('our-service')">Nossos Serviços</div>
+      <div class="item scroll-button" onclick="scrollToSection('how-works')">Como Funciona</div>
+      <div class="item scroll-button" onclick="scrollToSection('about')">Sobre</div>
     </div>
   </section>
   <section class="banner">
@@ -58,7 +63,7 @@
     </div>
     <div class="smiling"><img src="./assets/images/banner/smiling-girl.png" /></div>
   </section>
-  <section class="simple-list-service">
+  <section class="simple-list-service" id="our-service">
     <div class="content">
       <div class="title"><span>Nossos Serviços</span></div>
       <div class="service-card-list">
@@ -95,7 +100,7 @@
     </div>
     <div class="details-action">Saiba<br/>mais</div>
   </section>
-  <section class="how-works">
+  <section class="how-works" id="how-works">
     <div class="content">
       <div class="title"><span>Como Funciona?</span></div>
       <div class="items">
@@ -128,8 +133,7 @@
         <div></div>
         <div class="nums color">
           <span class="nums title">78</span>
-          <span class="nums description">Universidades
-            atendidas </span>
+          <span class="nums description">Universidades <br>atendidas</span>
         </div>
         <div class="nums color">
           <span class="nums title">94</span>
@@ -141,14 +145,13 @@
         </div>
         <div class="nums color">
           <span class="nums title">965</span>
-          <span class="nums description">Pesquisas
-            impactadas</span>
+          <span class="nums description">Pesquisas <br>impactadas</span>
         </div>
         <div></div>
       </div>
     </div>
   </section>
-  <section class="about">
+  <section class="about" id="about">
     <div class="content">
       <div class="title"><span>Sobre a SciBees</span></div>
       <div class="items">
