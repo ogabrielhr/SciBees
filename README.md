@@ -1,2 +1,0 @@
-# sciBeesLP
-Landing Page SciBees
